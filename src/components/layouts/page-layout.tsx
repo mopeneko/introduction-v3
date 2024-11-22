@@ -1,7 +1,7 @@
 import { AppShell, Box, Burger, Center } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { Icon } from "@iconify-icon/react";
 import { paths } from "../../config/paths";
-import { IconHome } from "@tabler/icons-react";
 import { NavLink } from "../ui/link/nav-link";
 
 type PageLayoutProps = {
@@ -21,7 +21,7 @@ export const PageLayout = ({ children }: PageLayoutProps) => {
             </AppShell.Header>
 
             <AppShell.Navbar p="md">
-                <NavLink href={paths.home.getHref()} icon={<IconHome />} label="Home" />
+                <NavLink href={paths.home.getHref()} icon={<Icon icon="material-symbols:home" />} label="Home" />
             </AppShell.Navbar>
 
             <AppShell.Main>{children}</AppShell.Main>
