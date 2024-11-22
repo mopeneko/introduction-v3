@@ -610,6 +610,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-icon/react@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@iconify-icon/react@npm:2.1.0"
+  dependencies:
+    iconify-icon: "npm:^2.1.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: 10c0/7e8b6a6acc9bd8a480eee660fc5b1aa389a6e0c20967cc4e2d647d967686984607228a51733f605f0054a16c48e02cfbe0e3f63a005e0cab612cb6e7a01b6d17
+  languageName: node
+  linkType: hard
+
+"@iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 10c0/65a3be43500c7ccacf360e136d00e1717f050b7b91da644e94370256ac66f582d59212bdb30d00788aab4fc078262e91c95b805d1808d654b72f6d2072a7e4b2
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -2059,6 +2077,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconify-icon@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "iconify-icon@npm:2.1.0"
+  dependencies:
+    "@iconify/types": "npm:^2.0.0"
+  checksum: 10c0/d853638fd6457a30188ee4c4bc29bab1fb30bae600ca2c625e3d036c96d9dbe35a3b99be47b5b3463a3b459f7f5ca3cb0690a4eb357b1e5928d06d5f46bd7f8e
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -2127,6 +2154,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "introduction-v3@workspace:."
   dependencies:
+    "@iconify-icon/react": "npm:^2.1.0"
     "@mantine/core": "npm:7.14.1"
     "@mantine/hooks": "npm:7.14.1"
     "@types/react": "npm:^18.3.3"
