@@ -12,7 +12,7 @@ export const AppRoot = () => {
                         <Center h="100%">
                             <Box>
                                 <Title order={1}>もぺ</Title>
-                                <Text size="xl" c="gray">Web Developer / Blogger</Text>
+                                <Text size="xl" fw={700} variant="gradient">Web Developer / Blogger</Text>
                             </Box>
                         </Center>
                     </Box>
