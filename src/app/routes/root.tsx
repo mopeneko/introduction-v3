@@ -12,7 +12,7 @@ export const AppRoot = () => {
                         <Center h="100%">
                             <Box>
                                 <Title order={1}>もぺ</Title>
-                                <Text size="xl" fw={700} variant="gradient">Web Developer / Blogger</Text>
+                                <Text size="xl" fw={700} variant="gradient">Web Developer / <a href="https://www.mope-blog.com">Blogger</a></Text>
                             </Box>
                         </Center>
                     </Box>
