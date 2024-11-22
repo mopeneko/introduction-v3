@@ -69,11 +69,11 @@ export const AppRoot = () => {
             </Center>
 
             <Center pt={32}>
-                <Text size="xl"><Icon icon="mdi:twitter" /></Text>
+                <Text size="xl"><a href="https://x.com/nkyna_" style={{ color: "black" }}><Icon icon="mdi:twitter" /></a></Text>
                 <Space w={6} />
-                <Text size="xl"><Icon icon="simple-icons:element" /></Text>
+                <Text size="xl"><a href="https://matrix.to/#/@mopeneko0xff:matrix.org" style={{ color: "black" }}><Icon icon="simple-icons:element" /></a></Text>
                 <Space w={6} />
-                <Text size="xl"><Icon icon="ic:baseline-email" /></Text>
+                <Text size="xl"><a href="mailto:mopeneko@lem0n.cc" style={{ color: "black" }}><Icon icon="ic:baseline-email" /></a></Text>
             </Center>
         </PageLayout>
     );
