@@ -1,6 +1,7 @@
-import { Box, Card, Center, Image, List, SimpleGrid, Text, Title } from "@mantine/core";
+import { Box, Card, Center, Image, List, SimpleGrid, Space, Text, Title } from "@mantine/core";
 import { PageLayout } from "../../components/layouts/page-layout";
 import { width } from "../../config/width";
+import { Icon } from "@iconify-icon/react";
 
 export const AppRoot = () => {
     return (
@@ -65,6 +66,14 @@ export const AppRoot = () => {
                         </Card>
                     </SimpleGrid>
                 </Card>
+            </Center>
+
+            <Center pt={32}>
+                <Text size="xl"><Icon icon="mdi:twitter" /></Text>
+                <Space w={6} />
+                <Text size="xl"><Icon icon="simple-icons:element" /></Text>
+                <Space w={6} />
+                <Text size="xl"><Icon icon="ic:baseline-email" /></Text>
             </Center>
         </PageLayout>
     );
