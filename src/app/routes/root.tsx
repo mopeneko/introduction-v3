@@ -62,7 +62,7 @@ export const AppRoot = () => {
                                 <List.Item>Cloud Storage</List.Item>
                                 <List.Item>Cloud Build</List.Item>
                             </List>
-                            <Text>の使用を経験しました。</Text>
+                            <Text>を経験しました。</Text>
                         </Card>
                     </SimpleGrid>
                 </Card>
