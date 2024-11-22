@@ -6,7 +6,7 @@ import { Icon } from "@iconify-icon/react";
 export const AppRoot = () => {
     return (
         <PageLayout>
-            <Center>
+            <Center pt={16}>
                 <SimpleGrid w={width} cols={{ base: 1, sm: 2 }}>
                     <Box>
                         <Center h="100%">
