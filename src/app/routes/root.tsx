@@ -75,6 +75,10 @@ export const AppRoot = () => {
                 <Space w={6} />
                 <Text size="xl"><a href="mailto:mopeneko@lem0n.cc" style={{ color: "black" }}><Icon icon="ic:baseline-email" /></a></Text>
             </Center>
+
+            <Center pt={8}>
+                <Text>PGP公開鍵: <a href="/public.asc">86155B2F8850F558DEB16332964CDE9781646982</a></Text>
+            </Center>
         </PageLayout>
     );
 }
