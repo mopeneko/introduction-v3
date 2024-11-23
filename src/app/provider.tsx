@@ -1,9 +1,7 @@
 type AppProviderProps = {
-    children?: React.ReactNode,
+	children?: React.ReactNode;
 };
 
 export const AppProvider = ({ children }: AppProviderProps) => {
-    return (
-        <>{children}</>
-    )
+	return <>{children}</>;
 };
