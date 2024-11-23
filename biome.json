@@ -7,7 +7,11 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [
+			"node_modules/",
+			".yarn/",
+			"dist/"
+		]
 	},
 	"formatter": {
 		"enabled": true,
