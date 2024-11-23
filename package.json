@@ -6,7 +6,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint -w .",
+		"format": "biome format -w .",
 		"preview": "vite preview"
 	},
 	"dependencies": {
