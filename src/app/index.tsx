@@ -4,9 +4,9 @@ import { theme } from "../theme";
 import { AppRouter } from "./router";
 
 export const App = () => {
-	return (
-		<MantineProvider theme={theme}>
-			<AppRouter />
-		</MantineProvider>
-	);
+  return (
+    <MantineProvider theme={theme}>
+      <AppRouter />
+    </MantineProvider>
+  );
 };
