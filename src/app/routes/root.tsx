@@ -24,7 +24,7 @@ export const AppRoot = () => {
                 <Title order={1}>もぺ</Title>
                 <Text size="xl" fw={700} variant="gradient">
                   Web Developer /{" "}
-                  <Text td="underline" span inherit>
+                  <Text td="underline #748ffc" span inherit>
                     <a href="https://www.mope-blog.com">Blogger</a>
                   </Text>
                 </Text>
