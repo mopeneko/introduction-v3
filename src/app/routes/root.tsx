@@ -11,10 +11,21 @@ import {
 } from "@mantine/core";
 import { PageLayout } from "../../components/layouts/page-layout";
 import { width } from "../../config/width";
-import { Icon } from "@iconify-icon/react";
 import { SkillCard } from "../../components/ui/card/skill-card";
+import { ContactLink } from "../../components/ui/link/contact-link";
 
 export const AppRoot = () => {
+  const googleCloudSkills = [
+    "Compute Engine",
+    "Cloud Run",
+    "Cloud Functions",
+    "Firestore",
+    "Firebase Authentication",
+    "BigQuery",
+    "Cloud Storage",
+    "Cloud Build",
+  ];
+
   return (
     <PageLayout>
       <Center pt={16}>
@@ -67,14 +78,9 @@ export const AppRoot = () => {
               <Text pt={16}>実務経験3年。</Text>
               <Text>業務では</Text>
               <List>
-                <List.Item>Compute Engine</List.Item>
-                <List.Item>Cloud Run</List.Item>
-                <List.Item>Cloud Functions</List.Item>
-                <List.Item>Firestore</List.Item>
-                <List.Item>Firebase Authentication</List.Item>
-                <List.Item>BigQuery</List.Item>
-                <List.Item>Cloud Storage</List.Item>
-                <List.Item>Cloud Build</List.Item>
+                {googleCloudSkills.map((skill) => (
+                  <List.Item key={skill}>{skill}</List.Item>
+                ))}
               </List>
               <Text>を経験しました。</Text>
             </SkillCard>
@@ -83,26 +89,14 @@ export const AppRoot = () => {
       </Center>
 
       <Center pt={32}>
-        <Text size="xl">
-          <a href="https://x.com/nkyna_" style={{ color: "black" }}>
-            <Icon icon="mdi:twitter" />
-          </a>
-        </Text>
+        <ContactLink href="https://x.com/nkyna_" icon="mdi:twitter" />
         <Space w={6} />
-        <Text size="xl">
-          <a
-            href="https://matrix.to/#/@mopeneko0xff:matrix.org"
-            style={{ color: "black" }}
-          >
-            <Icon icon="simple-icons:element" />
-          </a>
-        </Text>
+        <ContactLink
+          href="https://matrix.to/#/@mopeneko0xff:matrix.org"
+          icon="simple-icons:element"
+        />
         <Space w={6} />
-        <Text size="xl">
-          <a href="mailto:mopeneko@lem0n.cc" style={{ color: "black" }}>
-            <Icon icon="ic:baseline-email" />
-          </a>
-        </Text>
+        <ContactLink href="mailto:mopeneko@lem0n.cc" icon="ic:baseline-email" />
       </Center>
 
       <Center pt={8}>
