@@ -12,6 +12,7 @@ import {
 import { PageLayout } from "../../components/layouts/page-layout";
 import { width } from "../../config/width";
 import { Icon } from "@iconify-icon/react";
+import { SkillCard } from "../../components/ui/card/skill-card";
 
 export const AppRoot = () => {
   return (
@@ -45,51 +46,24 @@ export const AppRoot = () => {
         <Card w={width}>
           <Title order={2}>Skills</Title>
           <SimpleGrid pt={32} cols={{ base: 1, sm: 2 }}>
-            <Card
-              w="100%"
-              h={375}
-              shadow="sm"
-              padding="lg"
-              radius="md"
-              withBorder
-            >
-              <Title order={3}>Go</Title>
-
+            <SkillCard title="Go">
               <Text pt={16}>実務経験3年。</Text>
               <Text>
                 業務ではバックエンド開発を経験し、趣味ではCLIツールを開発しています。
               </Text>
               <Text>Echo, GORMの実務経験があります。</Text>
-            </Card>
+            </SkillCard>
 
-            <Card
-              w="100%"
-              h={375}
-              shadow="sm"
-              padding="lg"
-              radius="md"
-              withBorder
-            >
-              <Title order={3}>TypeScript</Title>
-
+            <SkillCard title="TypeScript">
               <Text pt={16}>実務経験3年。</Text>
               <Text>
                 業務ではフロントエンド開発やIoTデバイスのデータ処理を経験しました。
               </Text>
               <Text>趣味でもフロントエンド開発に使用しています。</Text>
               <Text>Nuxt.js(v2, v3)の実務経験があります。</Text>
-            </Card>
+            </SkillCard>
 
-            <Card
-              w="100%"
-              h={375}
-              shadow="sm"
-              padding="lg"
-              radius="md"
-              withBorder
-            >
-              <Title order={3}>Google Cloud</Title>
-
+            <SkillCard title="Google Cloud">
               <Text pt={16}>実務経験3年。</Text>
               <Text>業務では</Text>
               <List>
@@ -103,7 +77,7 @@ export const AppRoot = () => {
                 <List.Item>Cloud Build</List.Item>
               </List>
               <Text>を経験しました。</Text>
-            </Card>
+            </SkillCard>
           </SimpleGrid>
         </Card>
       </Center>
